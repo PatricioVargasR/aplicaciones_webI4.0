@@ -10,6 +10,7 @@ urls = (
 # Buscamos las clases en nuestro archivo utilizando globals
 app = web.application(urls, globals())
 
+# Hola
 
 # Definimos una clase con el nombre igual al que definimos en la URL
 class hello:
