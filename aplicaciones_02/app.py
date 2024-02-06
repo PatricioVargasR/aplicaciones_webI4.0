@@ -2,7 +2,9 @@
 import web
 
 # Definimos las URLs de nuestro sitio
-urls = ("/(.*)", "mvc.controllers.hello.Hello")
+urls = (
+    "/", "mvc.controllers.hello.hello",
+    "/", "mvc.controllers.hello2.hello2")
 
 # Creamos la aplicación utilizando las URLs que declaramos anteriormente
 # Buscamos las clases en nuestro archivo utilizando globals
