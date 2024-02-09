@@ -1,4 +1,4 @@
-$def with(nombre)
+$def with(productos)
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,10 +8,10 @@ $def with(nombre)
     <title>Prueba de Pyhon</title>
 </head>
 <body>
-    <h1>Hola $nombre</h1>
+    <!--<h1>Hola nombre</h1>-->
     <!-- No utilizamos espacio para declarar funciones -->
-    $for i in range(6):
-        <p>Número $i</p>
+    $for i in productos:
+        <p> $i</p>
     <!-- Utilizamos un espacio para declarar variables-->
     <!-- nombre = "Deha"-->
 </body>
