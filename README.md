@@ -5,3 +5,17 @@ Repositorio para los trabajos realizados en la matería de Aplicaciones Web para
 ## Requerimientos
 
 
+## Estrucutra básica de un archivo
+aplicacion/
+    - app.py
+    - mvc/
+        - models/
+            - m_index.py
+        - views/
+            - index.html (templator)
+        - controllers/
+            - indexl.py
+    - requirements.txt
+    - .gitignore
+
+
