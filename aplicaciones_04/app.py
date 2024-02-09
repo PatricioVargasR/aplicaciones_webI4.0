@@ -18,5 +18,7 @@ app = web.application(urls, globals())
 
 # Verificamos que el script se esté ejectuando directamente
 if __name__ == "__main__":
+    # Evitamos el debug
+    # web.config.debug = False
     # Iniciamos la aplicación
     app.run()
