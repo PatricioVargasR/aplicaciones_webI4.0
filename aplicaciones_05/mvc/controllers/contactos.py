@@ -6,7 +6,8 @@ from ..models.modelo_contactos import ModeloContactos  # Importamos la clase cor
 
 CONTACTOS = ModeloContactos()  # Creamos una objeto de la clase ModeloContactos()
 
-render = web.template.render('mvc/views/')  # Obtenemos la ruta donde se renderiza las plantiallas
+render = web.template.render('mvc/views/')  # Obtenemos la ruta donde se renderiza las plantillas
+# Agregamos ,base='layout' para utilizar una plantilla base
 
 
 # Creamos una clase llamada Contactos

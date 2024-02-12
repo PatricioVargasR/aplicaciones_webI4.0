@@ -12,7 +12,7 @@ class ModeloContactos:
     def __init__(self):
         self.datos = [
             {
-                "nombre": "Dejah",
+                "nombre": "Juan",
                 "correo": "dejah@gmail.com"
             },
             {
