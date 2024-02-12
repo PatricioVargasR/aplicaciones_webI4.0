@@ -3,7 +3,8 @@ import web
 
 # Definimos nuestras URLS
 urls = (
-    '/', 'mvc.controllers.contactos.Contactos'
+    '/', 'mvc.controllers.datos_personales.Datos',
+    '/contactos', 'mvc.controllers.contactos.Contactos'
 )
 
 # Creamos la aplicación
