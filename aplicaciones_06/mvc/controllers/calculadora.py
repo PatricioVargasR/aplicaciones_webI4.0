@@ -1,4 +1,5 @@
 import web
+from ..models.modelo_formulario import ModeloCalculadora
 
 # Creamos una variable que carga con todas las plantillas
 render = web.template.render("mvc/views/")
@@ -24,8 +25,9 @@ class Calculadora:
             # Obtenemos los valores de los inputs que se hayan enviado
             form = web.input()
             # Sumamos ambas entradas
-            suma = float(form.numero_1) + float(form.numero_2)
+            suma = ModeloCalculadora()
+            resultado = suma.sumar(form.numero_1, form.numero_2)
             # Cargamos la vista ahora con los valores ingresados en el formulario y el resultado
-            return render.calculadora(form.numero_1, form.numero_2, suma)
+            return render.calculadora(form.numero_1, form.numero_2, resultado)
         except Exception as error:
             return f'Ocurrió un error {error}'
