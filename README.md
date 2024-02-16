@@ -6,6 +6,7 @@ Repositorio para los trabajos realizados en la matería de Aplicaciones Web para
 
 
 ## Estrucutra básica de un archivo
+```
 ├── aplicacion/
 │   ├── app.py
 │   ├── mvc/
@@ -17,3 +18,4 @@ Repositorio para los trabajos realizados en la matería de Aplicaciones Web para
 │   │   │   ├── index.py
 │   ├── requirements.txt
 │   ├── .gitignore
+```
