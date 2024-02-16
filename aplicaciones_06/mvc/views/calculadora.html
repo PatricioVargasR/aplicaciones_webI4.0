@@ -1,0 +1,48 @@
+$def with (numero_1, numero_2, suma)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+        .prueba {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding-top: 30px;
+        }
+        form {
+            border: 2px solid black;
+            padding: 20px 20px 20px 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>La Hiper dipper calculadora</h1>
+    <hr>
+    <div class="prueba">
+        <form action="" method="post">
+            <p>
+                <label for="numero_1">Numero 1: </label>
+                <input type="number" name="numero_1" id="numero_1" min="0" value=$numero_1>
+            </p>
+            <p>
+                <label for="numero_1">Numero 2: </label>
+                <input type="number" name="numero_2" id="numero_2" min="0" value=$numero_2>
+            </p>
+            <p>
+                <label for="resultado">Resultado: </label>
+                <input type="number" name="resultado" id="resultado" value=$suma readonly>
+            </p>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+</body>
+</html>
