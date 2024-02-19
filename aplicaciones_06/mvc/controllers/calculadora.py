@@ -11,9 +11,7 @@ class Calculadora:
     def GET(self):
         try:
             # Inicializamos variables
-            numero_1= 0
-            numero_2 = 0
-            suma = 0
+            numero_1, numero_2, suma = 0, 0, 0
             # Cargamos la vista enviando las variables como parametros
             return render.calculadora(numero_1, numero_2, suma)
         except Exception as error:
